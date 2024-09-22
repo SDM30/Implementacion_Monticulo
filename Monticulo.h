@@ -9,10 +9,10 @@ class Monticulo {
       std::vector<T> vec;
     public:
         Monticulo();
-        bool insertar(T& val);
-        bool eliminar(T& val);
-        bool buscar(T& val);
-        int tamano();
+        bool insertar(const T& val);
+        bool eliminar(const T & val);
+        bool buscar(const T& val) const;
+        int tamano() const;
 
 };
 
