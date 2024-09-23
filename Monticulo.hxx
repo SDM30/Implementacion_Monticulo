@@ -35,3 +35,12 @@ template<class T>
 int Monticulo<T>::tamano() const {
     return vec.size();
 }
+
+template<class T>
+void Monticulo<T>::inordenEnLista(std::list<T>& resultado) const {
+    std::vector<T> copia = vec;     // Crear una copia del montículo
+    std::sort(copia.begin(), copia.end());     // Ordenar la copia para obtener los elementos en orden
+    for (const T& elem : copia) {
+        resultado.push_back(elem);     // Insertar los elementos en la lista
+    }
+}
