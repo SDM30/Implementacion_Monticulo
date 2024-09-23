@@ -2,6 +2,7 @@
 #define __MONTICULO__H__
 #include <algorithm>
 #include <vector>
+#include <list>
 
 template<class T>
 class Monticulo {
@@ -13,6 +14,7 @@ class Monticulo {
         bool eliminar(const T & val);
         bool buscar(const T& val) const;
         int tamano() const;
+        void inordenEnLista(std::list<T>& resultado) const;
 
 };
 
